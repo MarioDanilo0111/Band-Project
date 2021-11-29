@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- favicon icon -->
+    <link rel="icon" href="images/favicon copy.ico" />
+
+    <!-- Fonts-Family -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>A bit of music History</title>
+  </head>
+
+  <body>
+    <!-- skapar en section -->
+    <section id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand">Collections</a>
+          <!-- button för att collapsa item eftersom koden är dynamisk -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- skapa en div för att samla ihop alla items -->
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <!-- skapa en unordered list för alla items -->
+            <ul class="navbar-nav ms-auto">
+              <!-- skapa list items för att ha alla items för sig -->
+              <li class="nav-item">
+                <!-- a tag gör att a href link -->
+                <a class="nav-link" href="copypage1.html"><h5>Nirvana</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="copypage2.html"
+                  ><h5>Alice in Chains</h5></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="copypage3.html"
+                  ><h5>Soundgarden</h5></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="newForm.html">
+                  <h5>You'r Coments</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer"><h5>Contact</h5></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- title -->
+        <div class="row">
+          <div class="col-lg-6 title">
+            <h1>A bit of music History</h1>
+            <div class="col-lg-6">
+              <img src="images/cool-copy.jpg" alt="coolstuff.img" />
+            </div>
+          </div>
+          <div class="col-lg-6 title-text">
+            <h2>
+              This is my proyect... To show some of the content in the bands art
+              and there way throw music and art. I have bean trying to capture
+              the mos important thing in there tragectori to show how they
+              contributet for music and the history.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <a href="copypage1.html">
+            <i class="icon vinyl fas fa-record-vinyl fa-4x"></i>
+          </a>
+          <h3><i class="far fa-dizzy fa-1x"></i> Nirvana.</h3>
+          <p>Some info about the band and its members, see their discography</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <a href="copypage2.html">
+            <i class="icon vinyl fas fa-record-vinyl fa-4x"></i>
+          </a>
+          <h3>Alice in Chains</h3>
+          <p>Albums and art relatet work</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <a href="copypage3.html">
+            <i class="icon vinyl fas fa-record-vinyl fa-4x"></i>
+          </a>
+          <h3>Soundgarden</h3>
+          <p>Some albums and art contribution</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <!-- footer med ikoner som länkar till sidor -->
+    <!-- skapad för att ta kontakt med sidan i flera sätt -->
+
+    <footer id="footer">
+      <a class="one" href="https://twitter.com/" target="_blank"
+        ><i class="icon-footer fab fa-twitter fa-2x"></i
+      ></a>
+
+      <a class="one" href="https://sv-se.facebook.com/" target="_blank"
+        ><i class="icon-footer fab fa-facebook-f fa-2x"></i
+      ></a>
+
+      <a class="one" href="https://www.instagram.com/" target="_blank"
+        ><i class="icon-footer fab fa-instagram fa-2x"></i
+      ></a>
+
+      <!-- en copyright sektion -->
+      <p>© Copyright 2021 Collections</p>
+    </footer>
+
+    <!-- JavaScript Bootstrap  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

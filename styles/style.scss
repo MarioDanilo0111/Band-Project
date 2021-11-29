@@ -1,0 +1,294 @@
+//färger
+$backColor: #671818;
+$backColorFeatu: #950101;
+$textcolor: #eff8ff;
+$vinylColor: #000;
+$iconColor: #150050;
+$handColor: #090910;
+$vinylColorHover: #301b3f;
+$textColorHover: #77acf1;
+$textShaCol: #b8aeae;
+$footerColor: #fff4e4;
+$textColorFeat: #23938a;
+$colorWhite: #fff;
+$colorDada: #ffdada;
+// font
+$textUbu: "Ubuntu", sans-serif;
+$textShadows: "Shadows Into Light";
+$textMerryW: "Merriweather Sans", sans-serif;
+// metoder till text
+@mixin h1 {
+  font-family: $textUbu;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  padding-bottom: 6%;
+  color: $textcolor;
+}
+
+@mixin h2 {
+  font-family: $textShadows;
+  color: $textcolor;
+  font-size: 2rem;
+  line-height: 1;
+  padding-top: 60px;
+}
+
+@mixin h3 {
+  font-family: $textUbu;
+  font-weight: 500;
+  color: $textcolor;
+  padding-bottom: 6px;
+}
+
+@mixin h6 {
+  font-family: $textShadows;
+  color: $textColorFeat;
+  font-size: 1.6rem;
+  padding-top: 10px;
+}
+
+@mixin shadow {
+  font-family: $textShadows;
+  font-size: 1.3rem;
+  color: $textShaCol;
+  text-shadow: 0 0 2px rgb(161, 155, 155);
+}
+@mixin p {
+  font-family: "Shadows Into Light";
+  font-size: 1.6rem;
+  color: $textcolor;
+  padding-top: 10px;
+}
+//trigar id
+#title {
+  background-color: $backColor;
+
+  //beållare där vi distribuera metoder för text
+  .container-fluid {
+    padding: 7% 13%;
+    h1 {
+      @include h1();
+    }
+    h2 {
+      @include h2();
+    }
+    p {
+      @include p();
+    }
+    h3 {
+      @include h3();
+    }
+    h6 {
+      @include h6();
+    }
+    // navbar classen
+    .navbar {
+      padding: 0 0 2rem;
+
+      //sidans märke
+      .navbar-brand {
+        font-family: "Ubuntu", sans-serif;
+        color: $colorDada;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        padding-bottom: 1.5rem;
+      }
+      // item i navbar
+      .nav-item {
+        padding: 0 18px;
+        padding-bottom: 1.5rem;
+      }
+      //item länkas i navbar förstoras när man pekar över
+      h5 {
+        color: $textcolor;
+        font-family: $textUbu;
+        &:hover {
+          color: $textColorHover;
+          font-size: 21px;
+        }
+      }
+    }
+    .title {
+      h1 {
+        @include h1();
+      }
+    }
+
+    .title-text {
+      h2 {
+        @include h2();
+      }
+      h1 {
+        @include h1();
+      }
+    }
+    .title-image {
+      padding-top: 170px;
+      padding-left: 60px;
+    }
+  }
+}
+
+// Carousel
+#myCarousel {
+  .carousel-item {
+    height: 35rem;
+    background: $vinylColor;
+    color: $colorWhite;
+    position: relative;
+  }
+
+  .container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 300px 150px 100px 150px;
+  }
+
+  .overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+  h1 {
+    @include h1();
+  }
+  p {
+    @include shadow();
+  }
+}
+// sektion features där vi arbetar form  och länk ikoner
+#features {
+  padding: 7% 15%;
+  padding-bottom: 10px;
+  background-color: $backColorFeatu;
+
+  h3 {
+    @include h3();
+  }
+
+  .feature-box {
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 3%;
+
+    h3 {
+      @include h3();
+    }
+
+    p {
+      @include p();
+    }
+    h6 {
+      @include h6();
+    }
+    h2 {
+      @include h2();
+    }
+  }
+
+  #form {
+    .btn {
+      margin-bottom: 1.5rem;
+    }
+    h3 {
+      @include h3();
+    }
+    h6 {
+      @include h6();
+    }
+  }
+  a.text {
+    font-family: $textShadows;
+    font-size: 1.6rem;
+    color: $textColorFeat;
+    text-decoration: none;
+    &:hover {
+      font-size: 1.7rem;
+      color: $textColorHover;
+    }
+  }
+
+  // vi arbetar med JavaScripts koden här och hjälper att länka till bilder för emailvalidering
+  #forms,
+  #names,
+  #subtitle,
+  #textinput,
+  #email {
+    background-color: $colorDada;
+  }
+  #text {
+    display: block;
+    color: #000;
+    font-weight: 300;
+    padding: 5x;
+  }
+  #form .inputBox {
+    position: relative;
+  }
+
+  #form.invalid .inputBox:before {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+    background: url(../valid-invalid-icon-copy/invalid.jpeg);
+    background-size: cover;
+    z-index: 1000;
+  }
+  #form.valid .inputBox:before {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+    background: url(../valid-invalid-icon-copy/valid.jpeg);
+    background-size: cover;
+    z-index: 1000;
+  }
+
+  .icon {
+    margin-bottom: 0.5rem;
+    color: $iconColor;
+    &:hover {
+      font-size: 50px;
+      color: $handColor;
+    }
+  }
+
+  .icon.vinyl {
+    color: $vinylColor;
+
+    &:hover {
+      color: $vinylColorHover;
+      font-size: 66px;
+    }
+  }
+}
+// footer
+#footer {
+  background-color: $footerColor;
+  text-align: center;
+  padding: 3% 15%;
+
+  p {
+    @include shadow();
+  }
+
+  .icon-footer {
+    margin: 20px 15px;
+    &:hover {
+      font-size: 33px;
+    }
+  }
+}

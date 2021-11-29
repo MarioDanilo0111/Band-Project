@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+
+    <!-- favicon icon -->
+    <link rel="icon" href="images/favicon copy.ico" />
+
+    <!-- Fonts-Family -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>A bit of music History</title>
+  </head>
+
+  <body>
+    <!-- skapar en section -->
+    <section id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand text-center">Collections</a>
+          <br />
+          <!-- button för att collapsa item eftersom koden är dynamisk -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- skapa en div för att samla ihop alla items -->
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <!-- skapa en unordered list för alla items -->
+            <ul class="navbar-nav ms-auto">
+              <!-- skapa list items för att ha alla items för sig -->
+              <li class="nav-item">
+                <!-- a tag gör att a href link -->
+                <a class="nav-link" href="copyindivi.html">
+                  <h5>Back</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="copypage1.html">
+                  <h5>Nirvana</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="copypage2.html">
+                  <h5>Alice in Chains</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="copypage3.html">
+                  <h5>Soundgarden</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">
+                  <h5>Contact</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- title -->
+        <!-- skapa en div row för bild titel och text för form till sidans användarsektion -->
+        <div class="row">
+          <!-- en dynamik  div container-fluid  -->
+          <div class="container-fluid text-center">
+            <!-- div med centrerad text och dynamisk  -->
+            <div class="col-lg-12 text-center title-image">
+              <img
+                class="mb-4 d-block mx-auto"
+                src="images/cool-copy.jpg"
+                alt="cool-img"
+              />
+            </div>
+
+            <div class="col-lg-12 text-center">
+              <h1>A bit of music History</h1>
+              <h2>
+                Here is were you can add your coments and also leave us you'r
+                coments so that we can reach to you.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <!-- skapar dynamisk  där användaren ger kommentarer och data kommer att hanteras med JavaScript-->
+      <div>
+        <h3 class="mb-3">What would you want to share with us</h3>
+        <!-- skapar form  -->
+        <form id="form">
+          <!-- div row  -->
+          <div class="row">
+            <!-- Names -->
+            <div class="col-md-6">
+              <label for="names" class="form-label">
+                <h6>Names</h6>
+              </label>
+
+              <input
+                id="names"
+                type="text"
+                name="yourName"
+                class="form-control"
+                placeholder="first name, last name"
+                required
+              />
+            </div>
+
+            <!-- title text -->
+
+            <div class="col-sm-6">
+              <label for="subtitle" class="form-label">
+                <h6>Title</h6>
+              </label>
+
+              <input
+                id="subtitle"
+                type="text"
+                name="yourTitle"
+                class="form-control"
+                required
+              />
+            </div>
+
+            <!-- Text -->
+
+            <div class="mb-3">
+              <label for="textinput" class="form-label">
+                <h6>You'r post:</h6>
+              </label>
+
+              <textarea
+                id="textinput"
+                type="text"
+                name="yourText"
+                class="form-control"
+                rows="3"
+                required
+                data-er
+              ></textarea>
+            </div>
+
+            <!-- email  -->
+            <div class="md-3">
+              <label for="email" class="form-label">
+                <h6>Email address</h6>
+              </label>
+
+              <!-- input kopplat till metod för att validera email -->
+              <div class="inputBox">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  placeholder="mario@example.com"
+                  onkeydown="validation()"
+                  required
+                />
+                <span id="text"></span>
+                <div id="emailHelp" class="form-text">
+                  <h6>we wont share your email.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <!-- knapp kvitering av form -->
+          <button
+            type="button"
+            class="btn btn-outline-danger btn-lg btn-block"
+            onclick="writeData()"
+          >
+            <h6>Post comment</h6>
+          </button>
+
+          <!-- skriver ut formen i denna paragrafen  -->
+          <div class="table">
+            <p id="myTable"></p>
+          </div>
+        </form>
+      </div>
+
+      <!-- skapar med en ikon som länkar till första sidan  -->
+      <div class="row">
+        <div class="feature-box col-lg-12">
+          <a href="copyindivi.html">
+            <i class="icon far fa-hand-point-left fa-3x"></i>
+          </a>
+          <h2>to first page!</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <!-- footer med ikoner som länkar till sidor -->
+    <!-- skapad för att ta kontakt med sidan i flera sätt -->
+
+    <footer id="footer">
+      <a class="one" href="https://twitter.com/" target="_blank">
+        <i class="icon-footer fab fa-twitter fa-2x"></i
+      ></a>
+
+      <a class="one" href="https://sv-se.facebook.com/" target="_blank">
+        <i class="icon-footer fab fa-facebook-f fa-2x"></i
+      ></a>
+
+      <a class="one" href="https://www.instagram.com/" target="_blank">
+        <i class="icon-footer fab fa-instagram fa-2x"></i
+      ></a>
+
+      <!-- en copyright sektion -->
+      <p>© Copyright 2021 Collections</p>
+    </footer>
+
+    <!-- JavaScript Bootstrap  -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

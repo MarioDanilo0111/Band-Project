@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- favicon icon link -->
+    <link rel="icon" href="images/favicon copy.ico" />
+
+    <!-- Fonts Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>A bit of music History</title>
+  </head>
+
+  <body>
+    <!-- skapar en section -->
+    <section id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand">Collections</a>
+          <!-- button för att collapsa item eftersom koden är dynamisk -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- skapa en div för att samla ihop alla items -->
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <!-- skapa en unordered list för alla items -->
+            <ul class="navbar-nav ms-auto">
+              <!-- skapa list items för att ha alla items för sig -->
+              <li class="nav-item">
+                <!-- a tag gör att a href link -->
+                <a class="nav-link" href="copyindivi.html">
+                  <h5>Back</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="copypage1.html">
+                  <h5>Nirvana</h5>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="copypage3.html">
+                  <h5>Soundgarden</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="newForm.html">
+                  <h5>You'r Coments</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">
+                  <h5>Contact us:</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- title -->
+        <div class="row">
+          <div class="col-lg-6 title-text">
+            <h1>Alice in Chains</h1>
+            <h2>
+              Alice in Chains (often abbreviated as AIC) is an American rock
+              band from Seattle, Washington, formed in 1987 by guitarist and
+              vocalist Jerry Cantrell and drummer Sean Kinney, who later
+              recruited bassist Mike Starr and lead vocalist Layne Staley. Starr
+              was replaced by Mike Inez in 1993. William DuVall joined the band
+              in 2006 as co-lead vocalist and rhythm guitarist, replacing
+              Staley, who died in 2002. The band took its name from Staley's
+              previous group, the glam metal band Alice N' Chains.
+            </h2>
+          </div>
+          <div class="col-lg-6 title-image">
+            <img
+              style="width: 525px"
+              src="images/aic/aictheband.jpeg"
+              alt="coolstuff.img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sektion carucell med en fade funktion hover för att stanna när för användaren som har svårt att läsa om bilder går för snabt(accessibility) -->
+    <section
+      id="myCarousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      data-ds-pause="hover"
+    >
+      <!-- intervals tid för varije slite -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="3000">
+          <div
+            class="overlay-image"
+            style="background-image: url(images/aic/facelift\ .jpeg)"
+          ></div>
+          <!-- skapat text som kommer inne i bilden och ger lite förklaring av bilderna -->
+          <div class="container">
+            <h1>FaceLift</h1>
+            <p>
+              Facelift is the debut album by Alice in Chains, released August
+              21'st, 1990. It contains the released singles "We Die Young", "Man
+              in the Box", "Sea of Sorrow" and "Bleed the Freak". It has gone on
+              to sell over 2 million copies in the United States.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="1500">
+          <div
+            class="overlay-image"
+            style="background-image: url(images/aic/dirt.jpeg)"
+          ></div>
+          <div class="container">
+            <h1>Dirt</h1>
+            <p>
+              On Sept. 29, 1992, Alice in Chains released their sophomore album,
+              Dirt, which is widely considered the band’s greatest effort. The
+              album defines the group’s signature sound with heavy dropped ‘D’
+              tuned guitars, droning vocal harmonies and drug-induced lyrical
+              themes. Dirt peaked at No. 6 on the Billboard album chart and has
+              sold over 5 million copies around the world.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="750">
+          <div
+            class="overlay-image"
+            style="background-image: url(images/aic/jar-of-flies.jpeg)"
+          ></div>
+          <div class="container">
+            <h1>Jar of Flies</h1>
+            <p>
+              Despite being an EP, Alice in Chains' Jar of Flies, which was
+              released on Jan. 25, 1994, has a unique, compelling story behind
+              it, explored in these facts only superfans would know.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- pilar som ger en funktionalitet för att gå till nästa bild i karucelen -->
+      <!-- måste tagga karucelen med dens ID så att den kan användas -->
+      <!-- en pil som "prev" funktionalitet för föregående och en next för nästa bild -->
+      <a
+        class="carousel-control-prev"
+        type="button"
+        href="#myCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        type="button"
+        href="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </section>
+
+    <!-- dynamisk sektion för mera information -->
+    <section id="features">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <h3>Band members:</h3>
+          <h6>William Duvall</h6>
+          <h6>Jerry Cantrell</h6>
+          <h6>Mike Inez</h6>
+          <h6>Sean Kinney</h6>
+        </div>
+        <div class="feature-box col-lg-4">
+          <h3>Former members:</h3>
+          <h6>Layne Staley 1987-2002</h6>
+          <h6>Mike Starr 1987-1993</h6>
+          <h6>Ann Wilson 1992-1992</h6>
+        </div>
+        <!-- en ny sektion för länkar till extärna sidor  -->
+        <!-- med "target _blank" öppnas länken i en ny flink i web läsaren -->
+        <div class="feature-box col-lg-4">
+          <h3>Video links:</h3>
+          <div class="videos">
+            <div>
+              <a
+                class="text"
+                href="https://youtu.be/kbrANo-1QMQ"
+                target="_blank"
+              >
+                "Sea of Sorrow"
+              </a>
+            </div>
+            <div>
+              <a
+                class="text"
+                href="https://youtu.be/ODTv9Lt5WYs"
+                target="_blank"
+              >
+                "I Stay Away"
+              </a>
+            </div>
+            <div>
+              <a
+                class="text"
+                href="https://youtu.be/xKHUwfFb2lw"
+                target="_blank"
+              >
+                "Get Born Again"
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- skapar med en ikon som länkar till första sidan  -->
+      <div class="row">
+        <div class="feature-box col-lg-12">
+          <a href="copyindivi.html">
+            <i class="icon far fa-hand-point-left fa-3x"></i>
+          </a>
+          <h3 class="back-hand">Take me back!</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <!-- footer med ikoner som länkar till sidor -->
+    <!-- skapad för att ta kontakt med sidan i flera sätt -->
+
+    <footer id="footer">
+      <a class="one" href="https://twitter.com/" target="_blank">
+        <i class="icon-footer fab fa-twitter fa-2x"></i
+      ></a>
+
+      <a class="one" href="https://sv-se.facebook.com/" target="_blank">
+        <i class="icon-footer fab fa-facebook-f fa-2x"></i
+      ></a>
+
+      <a class="one" href="https://www.instagram.com/" target="_blank">
+        <i class="icon-footer fab fa-instagram fa-2x"></i
+      ></a>
+      <!-- en copyright sektion -->
+      <p>© Copyright 2021 Collections</p>
+    </footer>
+
+    <!-- JavaScript Bootstrap  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

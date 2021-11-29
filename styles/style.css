@@ -1,0 +1,303 @@
+#title {
+  background-color: #671818;
+}
+
+#title .container-fluid {
+  padding: 7% 13%;
+}
+
+#title .container-fluid h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  padding-bottom: 6%;
+  color: #eff8ff;
+}
+
+#title .container-fluid h2 {
+  font-family: "Shadows Into Light";
+  color: #eff8ff;
+  font-size: 2rem;
+  line-height: 1;
+  padding-top: 60px;
+}
+
+#title .container-fluid p {
+  font-family: "Shadows Into Light";
+  font-size: 1.6rem;
+  color: #eff8ff;
+  padding-top: 10px;
+}
+
+#title .container-fluid h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #eff8ff;
+  padding-bottom: 6px;
+}
+
+#title .container-fluid h6 {
+  font-family: "Shadows Into Light";
+  color: #23938a;
+  font-size: 1.6rem;
+  padding-top: 10px;
+}
+
+#title .container-fluid .navbar {
+  padding: 0 0 2rem;
+}
+
+#title .container-fluid .navbar .navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  color: #ffdada;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  padding-bottom: 1.5rem;
+}
+
+#title .container-fluid .navbar .nav-item {
+  padding: 0 18px;
+  padding-bottom: 1.5rem;
+}
+
+#title .container-fluid .navbar h5 {
+  color: #eff8ff;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#title .container-fluid .navbar h5:hover {
+  color: #77acf1;
+  font-size: 21px;
+}
+
+#title .container-fluid .title h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  padding-bottom: 6%;
+  color: #eff8ff;
+}
+
+#title .container-fluid .title-text h2 {
+  font-family: "Shadows Into Light";
+  color: #eff8ff;
+  font-size: 2rem;
+  line-height: 1;
+  padding-top: 60px;
+}
+
+#title .container-fluid .title-text h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  padding-bottom: 6%;
+  color: #eff8ff;
+}
+
+#title .container-fluid .title-image {
+  padding-top: 170px;
+  padding-left: 60px;
+}
+
+#myCarousel .carousel-item {
+  height: 35rem;
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+
+#myCarousel .container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 300px 150px 100px 150px;
+}
+
+#myCarousel .overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+#myCarousel h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  padding-bottom: 6%;
+  color: #eff8ff;
+}
+
+#myCarousel p {
+  font-family: "Shadows Into Light";
+  font-size: 1.3rem;
+  color: #b8aeae;
+  text-shadow: 0 0 2px #a19b9b;
+}
+
+#features {
+  padding: 7% 15%;
+  padding-bottom: 10px;
+  background-color: #950101;
+}
+
+#features h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #eff8ff;
+  padding-bottom: 6px;
+}
+
+#features .feature-box {
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 3%;
+}
+
+#features .feature-box h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #eff8ff;
+  padding-bottom: 6px;
+}
+
+#features .feature-box p {
+  font-family: "Shadows Into Light";
+  font-size: 1.6rem;
+  color: #eff8ff;
+  padding-top: 10px;
+}
+
+#features .feature-box h6 {
+  font-family: "Shadows Into Light";
+  color: #23938a;
+  font-size: 1.6rem;
+  padding-top: 10px;
+}
+
+#features .feature-box h2 {
+  font-family: "Shadows Into Light";
+  color: #eff8ff;
+  font-size: 2rem;
+  line-height: 1;
+  padding-top: 60px;
+}
+
+#features #form .btn {
+  margin-bottom: 1.5rem;
+}
+
+#features #form h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  color: #eff8ff;
+  padding-bottom: 6px;
+}
+
+#features #form h6 {
+  font-family: "Shadows Into Light";
+  color: #23938a;
+  font-size: 1.6rem;
+  padding-top: 10px;
+}
+
+#features a.text {
+  font-family: "Shadows Into Light";
+  font-size: 1.6rem;
+  color: #23938a;
+  text-decoration: none;
+}
+
+#features a.text:hover {
+  font-size: 1.7rem;
+  color: #77acf1;
+}
+
+#features #forms,
+#features #names,
+#features #subtitle,
+#features #textinput,
+#features #email {
+  background-color: #ffdada;
+}
+
+#features #text {
+  display: block;
+  color: #000;
+  font-weight: 300;
+  padding: 5x;
+}
+
+#features #form .inputBox {
+  position: relative;
+}
+
+#features #form.invalid .inputBox:before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  width: 24px;
+  height: 24px;
+  background: url(../valid-invalid-icon-copy/invalid.jpeg);
+  background-size: cover;
+  z-index: 1000;
+}
+
+#features #form.valid .inputBox:before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  width: 24px;
+  height: 24px;
+  background: url(../valid-invalid-icon-copy/valid.jpeg);
+  background-size: cover;
+  z-index: 1000;
+}
+
+#features .icon {
+  margin-bottom: 0.5rem;
+  color: #150050;
+}
+
+#features .icon:hover {
+  font-size: 50px;
+  color: #090910;
+}
+
+#features .icon.vinyl {
+  color: #000;
+}
+
+#features .icon.vinyl:hover {
+  color: #301b3f;
+  font-size: 66px;
+}
+
+#footer {
+  background-color: #fff4e4;
+  text-align: center;
+  padding: 3% 15%;
+}
+
+#footer p {
+  font-family: "Shadows Into Light";
+  font-size: 1.3rem;
+  color: #b8aeae;
+  text-shadow: 0 0 2px #a19b9b;
+}
+
+#footer .icon-footer {
+  margin: 20px 15px;
+}
+
+#footer .icon-footer:hover {
+  font-size: 33px;
+}
+/*# sourceMappingURL=style.css.map */

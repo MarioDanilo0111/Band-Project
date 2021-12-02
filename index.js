@@ -1,5 +1,5 @@
 // en tom array
-var arrUserInfo = [];
+// var arrUserInfo = [];
 console.log(arrUserInfo);
 // deklarera en klass
 class Addinput {
@@ -46,13 +46,13 @@ function writeData() {
   }
 }
 
-//funktion för att kontrollera om det skrivna mejlet, med "lambda" utrryck
+//funktion för att kontrollera om det skrivna mejlet, med "regex expression" utrryck
 function validation() {
   var form = document.getElementById("form");
   var email = document.getElementById("email").value;
   var text = document.getElementById("text");
   var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-  //med "match" metoden jämför vi mot "lambda" uttrycket och hämtar ikoner för att visa valida eller invalida mejl, samtidit skrivs string ut för att förtydla
+  //med "match" metoden jämför vi mot "regex expression" uttrycket och hämtar ikoner för att visa valida eller invalida mejl, samtidit skrivs string ut för att förtydla
   if (email.match(pattern)) {
     form.classList.add("valid");
     form.classList.remove("invalid");

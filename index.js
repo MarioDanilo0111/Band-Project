@@ -1,6 +1,6 @@
-// en tom array
-// var arrUserInfo = [];
-console.log(arrUserInfo);
+// en tom array för att lagra inputs från form
+var arrUserInfo = [];
+
 // deklarera en klass
 class Addinput {
   constructor(names, subtitle, textinput) {
@@ -69,3 +69,5 @@ function validation() {
     text.innerHTML = "";
   }
 }
+
+//console.log(arrUserInfo);
